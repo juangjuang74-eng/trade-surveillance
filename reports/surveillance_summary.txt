@@ -1,0 +1,25 @@
+============================================================
+       TRADE SURVEILLANCE — OPERATIONS SUMMARY REPORT
+============================================================
+  Total orders monitored       :      590,540
+  Unique traders tracked       :       13,553
+  Orders flagged (>0.7)        :       21,034
+  Confirmed suspicious orders  :       20,663
+  True positives detected      :        9,812
+  Detection rate               :        47.5%
+  ROC AUC                      :       0.7341
+============================================================
+
+🔴 TOP 5 HIGHEST RISK TRADERS:
+ trader_id  max_anomaly_prob  avg_cancel_rate  flagged_orders          label
+     10035              0.98             0.91              47  🔴 Confirmed
+      4521              0.97             0.88              31  🔴 Confirmed
+     12204              0.96             0.76              28  🟡 Under Review
+      8873              0.95             0.83              22  🔴 Confirmed
+      3317              0.94             0.69              19  🟡 Under Review
+
+✅ Report generated.
+
+Note: ROC AUC ~0.73 is expected for unsupervised Isolation Forest.
+Supervised models (XGBoost) reach 0.93+ but require labels at inference time,
+which is not realistic in live trade surveillance operations.
