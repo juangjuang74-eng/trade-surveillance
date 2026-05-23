@@ -71,6 +71,8 @@ trade-surveillance/
 | `notional_cov` | Coefficient of variation per trader | Erratic sizing behavior |
 
 ---
+<img width="1005" height="700" alt="newplot" src="https://github.com/user-attachments/assets/34adb789-d86b-42b7-9aa5-9a67692f13f2" />
+
 
 ## 🧠 Model
 
@@ -116,18 +118,12 @@ Four interactive Plotly charts:
 ## 🚀 How to Run
 
 ### Option A — Google Colab (Recommended)
-1. Open `notebooks/trade_surveillance_ieee.ipynb` in [Google Colab](https://colab.research.google.com)
+1. Open `notebooks/trade_surveillance.ipynb` in [Google Colab](https://colab.research.google.com)
 2. Download data from [kaggle.com/competitions/ieee-fraud-detection](https://www.kaggle.com/competitions/ieee-fraud-detection) → Data tab
 3. Upload `train_transaction.csv` and `train_identity.csv` when prompted
 4. Run all cells top to bottom
 
-### Option B — Local
-```bash
-git clone https://github.com/YOUR_USERNAME/trade-surveillance.git
-cd trade-surveillance
-pip install -r requirements.txt
-jupyter notebook notebooks/trade_surveillance_ieee.ipynb
-```
+
 
 > ⚠️ Data files are NOT included in this repo (Kaggle competition rules).  
 > Download directly from the competition page after joining.
